@@ -3,7 +3,7 @@
   border: 1px dashed pink;
 }
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
 }
 
@@ -55,7 +55,8 @@ header .content {
 }
 
 header .logo {
-  flex: 1;
+  flex: 2 1 2rem;
+  font-size: 2rem;
 }
 
 header nav ul {
@@ -64,7 +65,8 @@ header nav ul {
 
 nav li {
   padding-left: 3.5rem;
-  /*font-family: "Roboto-Regular";*/
+  font-family: Roboto-Regular, sans-serif;
+
 }
 
 nav a {
@@ -125,6 +127,8 @@ header .mobile {
   align-items: flex-start;
   height: 43.5rem;
   background-image: url(../images/banner-landingpage.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #sign-up-cta {
@@ -138,7 +142,7 @@ header .mobile {
 #sign-up-cta .content {
   width: 25.625rem;
   margin-top: 2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
   color: white;
@@ -161,7 +165,7 @@ header .mobile {
 }
 
 #sign-up-cta .striking {
-  font-family: "Rubik", sans-serif;
+  font-family: Rubik-Regular, sans-serif;
   padding-bottom: .75rem;
 }
 
@@ -309,8 +313,13 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
+  justify-content: center;
 }
 
+.image-container img{
+  width: 100%;
+}
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
@@ -347,21 +356,25 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
+  display: flex;
+  justify-content: center;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
+  font-family: Palatino, serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
+  font-size: 1.875rem;
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -392,6 +405,7 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  font-family: Roboto, sans-serif;
 }
 
 footer .copyright {
